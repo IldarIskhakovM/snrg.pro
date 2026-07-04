@@ -1,4 +1,3 @@
-</> TypeScript
 export default function Services() {
   return (
     <section style={{ padding: "60px 40px" }}>
