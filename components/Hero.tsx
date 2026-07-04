@@ -1,37 +1,38 @@
 export default function Hero() {
   return (
     <section style={{
-      padding: "90px 20px",
-      textAlign: "center"
+      textAlign: "center",
+      padding: "110px 20px"
     }}>
       <div className="container">
         <h1 style={{
-          fontSize: 44,
-          marginBottom: 16,
-          lineHeight: 1.1
+          fontSize: 52,
+          fontWeight: 700,
+          letterSpacing: -1,
+          marginBottom: 16
         }}>
-          АСУ ТП и промышленная автоматизация
+          Автоматизация промышленных процессов
         </h1>
 
         <p style={{
+          opacity: 0.7,
           fontSize: 18,
-          opacity: 0.75,
           maxWidth: 700,
           margin: "0 auto 30px"
         }}>
-          Проектирование, внедрение и сопровождение систем управления технологическими процессами для промышленных предприятий
+          Инженерные решения для АСУ ТП, SCADA и промышленных предприятий
         </p>
 
         <button style={{
-          background: "#ff4d1a",
-          color: "white",
-          padding: "12px 22px",
-          borderRadius: 10,
+          background: "linear-gradient(90deg,#ff4d1a,#ff7a18)",
           border: "none",
+          padding: "14px 26px",
+          borderRadius: 10,
+          color: "white",
           fontWeight: 600,
           cursor: "pointer"
         }}>
-          Оставить заявку
+          Обсудить проект
         </button>
       </div>
     </section>
