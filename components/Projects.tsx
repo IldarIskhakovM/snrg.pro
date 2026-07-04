@@ -1,31 +1,30 @@
+const projects = [
+  { title: "Насосная станция", desc: "Автоматизация управления насосами" },
+  { title: "Котельная", desc: "Контроль температуры и давления" },
+  { title: "Производственная линия", desc: "Интеграция PLC + SCADA" }
+];
+
 export default function Projects() {
   return (
-    <section style={{ padding: "60px 40px" }}>
-      <h2 style={{ fontSize: 32, marginBottom: 20 }}>
-        Реализованные проекты
-      </h2>
+    <section id="projects" className="container" style={{ padding: "60px 20px" }}>
+      <h2 style={{ fontSize: 28, marginBottom: 20 }}>Проекты</h2>
 
       <div style={{
         display: "grid",
-        gridTemplateColumns: "repeat(3, 1fr)",
-        gap: 20
+        gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+        gap: 16
       }}>
-        
-        <div style={{ padding: 20, background: "#111827", borderRadius: 12 }}>
-          <h3>Насосная станция</h3>
-          <p>Автоматизация управления насосами</p>
-        </div>
-
-        <div style={{ padding: 20, background: "#111827", borderRadius: 12 }}>
-          <h3>Котельная</h3>
-          <p>Система контроля температуры и давления</p>
-        </div>
-
-        <div style={{ padding: 20, background: "#111827", borderRadius: 12 }}>
-          <h3>Заводская линия</h3>
-          <p>Полная интеграция PLC и SCADA</p>
-        </div>
-
+        {projects.map((p) => (
+          <div key={p.title} style={{
+            background: "#0f172a",
+            padding: 18,
+            borderRadius: 14,
+            border: "1px solid #1f2937"
+          }}>
+            <h3>{p.title}</h3>
+            <p style={{ opacity: 0.7 }}>{p.desc}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
