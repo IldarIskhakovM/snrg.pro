@@ -1,6 +1,4 @@
 </> TypeScript
-import Image from "next/image";
-
 export default function Header() {
   return (
     <header style={{
@@ -11,7 +9,7 @@ export default function Header() {
       borderBottom: "1px solid #1f2937"
     }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-        <Image src="/logo.png" alt="Синергия" width={40} height={40} />
+        <img src="/logo.png" width={40} height={40} />
         <b>СИНЕРГИЯ</b>
       </div>
 
