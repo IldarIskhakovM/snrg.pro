@@ -1,4 +1,3 @@
-</> TypeScript
 export default function RootLayout({
   children,
 }: {
